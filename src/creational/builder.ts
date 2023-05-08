@@ -9,8 +9,8 @@ class Village {
     church: boolean;
     dungeon: boolean;
 
-    outputInfo(num): string {
-        return `Village has: `;
+    outputInfo(): string {
+        return `Village created`;
     };
 }
 
@@ -26,37 +26,11 @@ interface VillageBuilderI {
     createDungeon(): void;
 }
 
-class VillageBuilder implements VillageBuilderI {
+class VillageBuilder implements VillageBuilder {
     private product: Village;
 
-    createVillage(type: string): void {
+    reset(): void {
         this.product = new Village();
-
-        if (type == 'small') {
-            this.createSmallHouse(2);
-            this.createBigHouse(1);
-            this.createWell(1);
-            this.createFarm(1);
-        }
-        else if (type == 'middle') {
-            this.createSmallHouse(4);
-            this.createBigHouse(2);
-            this.createWell(2);
-            this.createFarm(2);
-            this.createChurch();
-            this.createSmithy(1);
-        }
-        else if (type == 'big') {
-            this.createSmallHouse(7);
-            this.createBigHouse(5);
-            this.createLibrary();
-            this.createWell(3);
-            this.createFarm(4);
-            this.createChurch();
-            this.createShop(2);
-            this.createSmithy(2);
-            this.createDungeon();
-        }
     }
 
     createSmallHouse(num: number) {
@@ -87,16 +61,71 @@ class VillageBuilder implements VillageBuilderI {
         this.product.dungeon = true;
     };
 
-    getVillage(type: string): Village {
-        this.createVillage(type)
+    getVillage(): Village {
         return this.product;
+    }
+}
+
+class Director {
+
+    createDefoultVillage(builder: VillageBuilder, type: string): void {
+        builder.reset();
+        if (type == 'small') {
+            builder.createSmallHouse(2);
+            builder.createBigHouse(1);
+            builder.createWell(1);
+            builder.createFarm(1);
+        }
+        else if (type == 'middle') {
+            builder.createSmallHouse(4);
+            builder.createBigHouse(2);
+            builder.createWell(2);
+            builder.createFarm(2);
+            builder.createChurch();
+            builder.createSmithy(1);
+        }
+        else if (type == 'big') {
+            builder.createSmallHouse(7);
+            builder.createBigHouse(5);
+            builder.createLibrary();
+            builder.createWell(3);
+            builder.createFarm(4);
+            builder.createChurch();
+            builder.createShop(2);
+            builder.createSmithy(2);
+            builder.createDungeon();
+        }
+    }
+    createUserVillage(builder: VillageBuilder, ...arr: string[]): void {
+        builder.reset();
+        if (arr.includes('small house')) builder.createSmallHouse(1);
+        if (arr.includes('big house')) builder.createBigHouse(1);
+        if (arr.includes('library')) builder.createLibrary();
+        if (arr.includes('shop')) builder.createShop(1);
+        if (arr.includes('farm')) builder.createFarm(1);
+        if (arr.includes('well')) builder.createWell(1);
+        if (arr.includes('smithy')) builder.createSmithy(1);
+        if (arr.includes('shurch')) builder.createChurch();
+        if (arr.includes('dungeon')) builder.createDungeon();
     }
 }
 
 //--------------------------------------------------------------------------------
 
+const director = new Director();
+
 const builder = new VillageBuilder();
 
-console.log(builder.getVillage('small'));
-console.log(builder.getVillage('middle'));
-console.log(builder.getVillage('big'));
+director.createDefoultVillage(builder, 'middle');
+const middleVillage = builder.getVillage();
+
+director.createDefoultVillage(builder, 'big');
+const bigVillage = builder.getVillage();
+
+director.createUserVillage(builder, 'small house', 'big house', 'library', 'dungeon');
+const userVillage = builder.getVillage();
+
+
+console.log(middleVillage);
+console.log(bigVillage);
+console.log(userVillage);
