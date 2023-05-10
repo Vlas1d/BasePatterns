@@ -8,13 +8,11 @@ class Settings {
     private static instance: Settings; //Чому статичні властивості не можна вказати в інтерфейсі
 
     sound: boolean;
-    music: boolean;
     lang: Language;
     wifi: boolean;
 
     private constructor() {
         this.sound = true;
-        this.music = false;
         this.lang = Language.UA;
         this.wifi = true;
     }
