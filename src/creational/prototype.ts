@@ -44,7 +44,7 @@ class CardUnlimited implements CardPrototype {
 class CardRegistry {
     private cards: { [key: string]: CardPrototype } = {};
 
-    addCard(name: string, card: CardPrototype) {
+    addCard(name: string, card: CardPrototype): void {
         this.cards[name] = card;
     }
 
