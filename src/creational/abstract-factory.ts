@@ -105,7 +105,7 @@ class ColorfullGUIFactory implements GUIFactory {
 //-------------------------------------------------------------
 
 class CreateGUI {
-    factory: GUIFactory;
+    private factory: GUIFactory;
 
     constructor(factory: string) {
         switch (factory) {
@@ -123,12 +123,16 @@ class CreateGUI {
             } break;
         }
     }
+
+    getFactory(): GUIFactory {
+        return this.factory;
+    }
 }
 
 //---------------------------------------------------------------
 
 try {
-    const createGUI = new CreateGUI('Dark').factory;
+    const createGUI = new CreateGUI('Dark').getFactory();
     const textInput = createGUI.createTextInput().getText();
 
 
