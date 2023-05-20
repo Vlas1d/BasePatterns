@@ -21,5 +21,5 @@ class Settings {
 const settings1 = Settings.getInstance();
 const settings2 = Settings.getInstance();
 console.log(settings1);
-console.log(settings1.setTheme('Light'));
+settings1.setTheme('Light');
 //# sourceMappingURL=singleton.js.map

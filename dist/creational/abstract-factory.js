@@ -119,9 +119,12 @@ class CreateGUI {
                 break;
         }
     }
+    getFactory() {
+        return this.factory;
+    }
 }
 try {
-    const createGUI = new CreateGUI('Dark').factory;
+    const createGUI = new CreateGUI('Dark').getFactory();
     const textInput = createGUI.createTextInput().getText();
     console.log(createGUI.createButton());
     console.log(createGUI.createTextInput());
