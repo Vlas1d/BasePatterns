@@ -7,11 +7,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Factory",
+            "name": "Creational",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\src\\creational\\factory.ts",
+            "program": "${workspaceFolder}\\src\\creational\\${fileBasenameNoExtension}.ts",
             "runtimeArgs": [
                 "-r",
                 "ts-node/register",
@@ -26,11 +26,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Abstract Factory",
+            "name": "Structural",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\src\\creational\\abstract-factory.ts",
+            "program": "${workspaceFolder}\\src\\structural\\${fileBasenameNoExtension}.ts",
             "runtimeArgs": [
                 "-r",
                 "ts-node/register",
@@ -45,163 +45,11 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Builder",
+            "name": "Behavioral",
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\src\\creational\\builder.ts",
-            "runtimeArgs": [
-                "-r",
-                "ts-node/register",
-                "-r",
-                "tsconfig-paths/register"
-            ],
-            "console": "integratedTerminal",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Prototype",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\src\\creational\\prototype.ts",
-            "runtimeArgs": [
-                "-r",
-                "ts-node/register",
-                "-r",
-                "tsconfig-paths/register"
-            ],
-            "console": "integratedTerminal",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Singleton",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\src\\creational\\singleton.ts",
-            "runtimeArgs": [
-                "-r",
-                "ts-node/register",
-                "-r",
-                "tsconfig-paths/register"
-            ],
-            "console": "integratedTerminal",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Adapter",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\src\\structural\\adapter.ts",
-            "runtimeArgs": [
-                "-r",
-                "ts-node/register",
-                "-r",
-                "tsconfig-paths/register"
-            ],
-            "console": "integratedTerminal",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Bridge",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\src\\structural\\bridge.ts",
-            "runtimeArgs": [
-                "-r",
-                "ts-node/register",
-                "-r",
-                "tsconfig-paths/register"
-            ],
-            "console": "integratedTerminal",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Composite",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\src\\structural\\composite.ts",
-            "runtimeArgs": [
-                "-r",
-                "ts-node/register",
-                "-r",
-                "tsconfig-paths/register"
-            ],
-            "console": "integratedTerminal",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Wrapper",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\src\\structural\\wrapper.ts",
-            "runtimeArgs": [
-                "-r",
-                "ts-node/register",
-                "-r",
-                "tsconfig-paths/register"
-            ],
-            "console": "integratedTerminal",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Facade",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\src\\structural\\facade.ts",
-            "runtimeArgs": [
-                "-r",
-                "ts-node/register",
-                "-r",
-                "tsconfig-paths/register"
-            ],
-            "console": "integratedTerminal",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
-        },
-        {
-            "type": "node",
-            "request": "launch",
-            "name": "Flyweight",
-            "skipFiles": [
-                "<node_internals>/**"
-            ],
-            "program": "${workspaceFolder}\\src\\structural\\flyweight.ts",
+            "program": "${workspaceFolder}\\src\\behavioral\\${fileBasenameNoExtension}.ts",
             "runtimeArgs": [
                 "-r",
                 "ts-node/register",
