@@ -22,11 +22,11 @@ class BrowserGame {
     }
 
     loadGame(name: string): void {
-        let save = SaveDirectory.saves.find((save) => save.name === name);
+        let save = SaveDirectory.saves.find((save) => (save as Memento).name === name);
         if (save) {
-            this.coins = save.getCoins();
-            this.score = save.getScore();
-            this.lvl = save.getLevel();
+            this.coins = (save as Memento).getCoins();
+            this.score = (save as Memento).getScore();
+            this.lvl = (save as Memento).getLevel();
             console.log(`Loaded game: ${name}`);
         } else {
             console.log(`Save '${name}' not found.`);
@@ -47,7 +47,9 @@ class BrowserGame {
 
 //---------------------------SAVE----------------------------------
 
-class Memento {
+interface MementoI { }
+
+class Memento implements MementoI {
     private coins: number;
     private score: number;
     private lvl: number;
@@ -75,7 +77,7 @@ class Memento {
 }
 
 class SaveDirectory {
-    static saves: Memento[] = [];
+    static saves: MementoI[] = [];
 }
 
 //----------------------------CLIENT---------------------------------
