@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-16T21:42:26.822Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="vAHkxeGvR0RVxB3WwMku" version="21.4.0" type="device">
+<mxfile host="app.diagrams.net" modified="2023-06-17T09:19:10.249Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="RFiPRYUdntImnRcdmmsk" version="21.4.0" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="875" dy="484" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -92,7 +92,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="VVUqz84ma2gAghMfkH4X-8" value="Сповіщає про оновлений стан" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VVUqz84ma2gAghMfkH4X-4">
+        <mxCell id="VVUqz84ma2gAghMfkH4X-8" value="Оновлений стан" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="VVUqz84ma2gAghMfkH4X-4">
           <mxGeometry x="0.3804" y="4" relative="1" as="geometry">
             <mxPoint x="45" y="6" as="offset" />
           </mxGeometry>
