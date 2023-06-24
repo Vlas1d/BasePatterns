@@ -22,6 +22,10 @@ class MVCView {
     render(model: MVCModel) {
         console.log(`>>> Data: ${model.getData()}`);
     }
+
+    enter(data: string): string {
+        return data;
+    }
 }
 
 //----------Controller------------------------------
@@ -43,9 +47,9 @@ class MVCController {
 
 //----------Client----------------------------------
 
-const model = new MVCModel('data 1');
-const view = new MVCView();
-const controller = new MVCController(model, view);
+const model1 = new MVCModel('data 1');
+const view1 = new MVCView();
+const controller1 = new MVCController(model1, view1);
 
-view.render(model);
-controller.changeData('data 2');
+view1.render(model1);
+controller1.changeData(view1.enter('data 2'));
