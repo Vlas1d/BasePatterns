@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-24T09:09:17.512Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="_8KLFGruLtZqYE9d620t" version="21.5.0" type="device">
+<mxfile host="app.diagrams.net" modified="2023-06-24T09:13:00.560Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="m3bOBPeo4ui2TEn0uLn7" version="21.5.0" type="device">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="1235" dy="684" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -327,6 +327,28 @@
         <mxCell id="Ba_IfQK08gYM8QYN7jCt-67" value="Використовує&lt;br&gt;моделі даних" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ba_IfQK08gYM8QYN7jCt-66">
           <mxGeometry x="-0.3741" y="-2" relative="1" as="geometry">
             <mxPoint y="-24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ba_IfQK08gYM8QYN7jCt-68" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Ba_IfQK08gYM8QYN7jCt-2" target="OtVp7UMmvByRTMtt62H5-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="30" y="350" as="sourcePoint" />
+            <mxPoint x="80" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ba_IfQK08gYM8QYN7jCt-70" value="Оновлений&lt;br&gt;стан" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ba_IfQK08gYM8QYN7jCt-68">
+          <mxGeometry x="-0.2706" y="-1" relative="1" as="geometry">
+            <mxPoint y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ba_IfQK08gYM8QYN7jCt-69" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="Ba_IfQK08gYM8QYN7jCt-11" target="Ba_IfQK08gYM8QYN7jCt-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="280" as="sourcePoint" />
+            <mxPoint x="420" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ba_IfQK08gYM8QYN7jCt-71" value="Оновлений&lt;br&gt;стан" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Ba_IfQK08gYM8QYN7jCt-69">
+          <mxGeometry x="-0.3229" y="-2" relative="1" as="geometry">
+            <mxPoint y="-9" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
